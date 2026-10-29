@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+<defs><pattern id="j" width="40" height="40" patternUnits="userSpaceOnUse"><g fill="none" stroke="#2C3B7A"><path d="M10 10h20v20H10z"/><path d="M20 6l14 14-14 14L6 20z"/><path d="M20 0v6M20 34v6M0 20h6M34 20h6"/></g></pattern></defs>
+<rect width="1200" height="630" fill="#1E2A5A"/><rect width="1200" height="630" fill="url(#j)"/>
+<path d="M760 560V250a160 160 0 0 1 320 0v310z" fill="#F5F6FA"/>
+<path d="M850 560V320a70 70 0 0 1 140 0v240z" fill="#E9A31B"/>
+<text x="80" y="235" font-family="Georgia,'Times New Roman',serif" font-size="96" font-weight="700" fill="#FFFFFF">Khadim</text>
+<text x="80" y="320" font-family="Georgia,'Times New Roman',serif" font-size="50" fill="#FFFFFF">Good help at home,</text>
+<text x="80" y="382" font-family="Georgia,'Times New Roman',serif" font-size="50" fill="#F6C453">hired the fair way.</text>
+<text x="80" y="480" font-family="Arial,Helvetica,sans-serif" font-size="30" fill="#D7DCF3">Pay tools, guides and free matching</text>
+</svg>

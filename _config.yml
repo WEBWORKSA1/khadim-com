@@ -1,0 +1,10 @@
+title: "Khadim — household help, hired the fair way"
+description: "Guides, pay tools and free matching for hiring household help fairly."
+exclude:
+  - README.md
+  - BUILD-PROMPTS.md
+  - RESEARCH.md
+  - _build
+  - Gemfile
+  - Gemfile.lock
+  - vendor

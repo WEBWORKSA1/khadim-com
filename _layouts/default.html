@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+{% if page.is404 %}<script>(function(){var b=location.hostname.indexOf('github.io')>-1?'/'+location.pathname.split('/')[1]+'/':'/';document.write('<base href="'+b+'">')})();</script>
+{% endif %}<title>{{ page.title | escape }}</title>
+<meta name="description" content="{{ page.description | escape }}">
+<link rel="canonical" href="{{ page.canonical }}">
+<meta name="robots" content="{{ page.robots }}">
+<meta name="theme-color" content="#1E2A5A">
+<meta property="og:type" content="{{ page.og_type }}">
+<meta property="og:site_name" content="Khadim">
+<meta property="og:title" content="{{ page.title | escape }}">
+<meta property="og:description" content="{{ page.description | escape }}">
+<meta property="og:url" content="{{ page.canonical }}">
+<meta property="og:image" content="https://khadim.com/assets/img/og.svg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="{{ page.root }}assets/img/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="{{ page.root }}assets/img/icon.svg">
+<link rel="manifest" href="{{ page.root }}site.webmanifest">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700&amp;family=Young+Serif&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="{{ page.root }}assets/css/style.css">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6620975821265271" crossorigin="anonymous"></script>
+
+</head>
+<body data-section="{{ page.section }}">
+<a class="skip" href="#main">Skip to content</a>
+<div class="topbar" role="note"><a href="https://web.works/contact" target="_blank" rel="noopener">Contact, if you are interested in this website/domain name/Sponsorship/Advertisement/Partnership</a></div>
+<header class="site"><div class="wrap nav">
+<a class="logo" href="{{ page.root }}index.html" aria-label="Khadim home"><svg viewBox="0 0 30 34" aria-hidden="true"><path d="M1 33V15a14 14 0 0 1 28 0v18z" fill="var(--indigo)"/><path d="M9 33V19a6 6 0 0 1 12 0v14z" fill="var(--turmeric)"/></svg><span>Khadim</span></a>
+<ul class="menu" id="menu"><li><a href="{{ page.root }}get-help.html" data-key="help">Find help</a></li><li><a href="{{ page.root }}tools.html" data-key="tools">Costs &amp; tools</a></li><li><a href="{{ page.root }}guides/index.html" data-key="guides">Guides</a></li><li><a href="{{ page.root }}videos.html" data-key="videos">Videos</a></li><li><a href="{{ page.root }}find-work.html" data-key="work">Find work</a></li><li><a href="{{ page.root }}agencies.html" data-key="agencies">Agencies</a></li><li><a href="{{ page.root }}awards.html" data-key="awards">Awards</a></li><li><a href="{{ page.root }}support.html" data-key="support">Support us</a></li></ul>
+<div class="nav-cta"><a class="btn btn-primary btn-sm hide-m" href="{{ page.root }}get-help.html">Get matched</a>
+<button class="icon-btn" id="themeBtn" type="button" aria-label="Switch light or dark theme"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="2"/><path d="M12 3a9 9 0 0 1 0 18z" fill="currentColor"/></svg></button>
+<button class="icon-btn burger" id="burger" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="menu">☰</button></div>
+</div></header>
+<main id="main">
+{{ content }}
+</main>
+<footer class="site"><div class="wrap">
+<div class="foot-grid">
+<div><a class="logo" href="{{ page.root }}index.html"><svg viewBox="0 0 30 34" aria-hidden="true"><path d="M1 33V15a14 14 0 0 1 28 0v18z" fill="var(--indigo)"/><path d="M9 33V19a6 6 0 0 1 12 0v14z" fill="var(--turmeric)"/></svg><span>Khadim</span></a>
+<p style="margin-top:12px;font-size:.95rem;color:var(--muted);max-width:36ch">Guides, pay tools and a free matching service for families hiring household help — and fair terms for the people who do the work.</p>
+<form class="js-form inline-form" data-subject="Newsletter signup" data-ok="You're subscribed. The next Home &amp; Help letter arrives on the 1st." style="margin-top:16px">
+<input type="email" name="email" required placeholder="you@email.com" aria-label="Email for the monthly Home and Help letter">
+<input class="hp" name="_honey" tabindex="-1" autocomplete="off" aria-hidden="true">
+<input type="hidden" name="list" value="Home &amp; Help newsletter"><button class="btn btn-primary btn-sm" type="submit">Subscribe</button><div class="form-msg" role="status"></div></form>
+<p class="small" style="margin-top:6px">Monthly pay updates and new guides. Unsubscribe any time.</p></div>
+<div><h4>Households</h4><ul><li><a href="{{ page.root }}get-help.html">Find help</a></li><li><a href="{{ page.root }}tools.html">Pay &amp; cost tools</a></li><li><a href="{{ page.root }}contract.html">Contract builder</a></li><li><a href="{{ page.root }}roles.html">Roles explained</a></li><li><a href="{{ page.root }}pledge.html">Fair Home pledge</a></li></ul></div>
+<div><h4>Learn</h4><ul><li><a href="{{ page.root }}guides/index.html">All guides</a></li><li><a href="{{ page.root }}guides/domestic-worker-salary-guide.html">Salary guide 2026</a></li><li><a href="{{ page.root }}guides/hiring-checklist.html">Hiring checklist</a></li><li><a href="{{ page.root }}videos.html">Videos</a></li><li><a href="{{ page.root }}faq.html">FAQ</a></li></ul></div>
+<div><h4>Community</h4><ul><li><a href="{{ page.root }}find-work.html">Find work</a></li><li><a href="{{ page.root }}agencies.html">For agencies</a></li><li><a href="{{ page.root }}awards.html">Home Heroes Awards</a></li><li><a href="{{ page.root }}careers.html">Careers &amp; talent</a></li><li><a href="{{ page.root }}support.html">Support us</a></li></ul></div>
+<div><h4>Company</h4><ul><li><a href="{{ page.root }}about.html">About</a></li><li><a href="{{ page.root }}advertise.html">Advertise &amp; sponsor</a></li><li><a href="{{ page.root }}contact.html">Contact</a></li><li><a href="https://web.works/contact" target="_blank" rel="noopener">Buy or partner</a></li><li><a href="{{ page.root }}privacy.html">Privacy</a></li><li><a href="{{ page.root }}terms.html">Terms</a></li><li><a href="{{ page.root }}disclaimer.html">Disclaimer</a></li><li><a href="{{ page.root }}cookies.html">Cookies</a></li><li><a href="{{ page.root }}trademark.html">Trademark &amp; copyright</a></li></ul></div>
+</div>
+<div class="legal">
+<p><b>Trademark &amp; copyright disclosure:</b> "Khadim" is an ordinary word in Arabic, Urdu, Hindi and Persian meaning "one who serves". It is used on this website only as a descriptive domain name for a household-help information service. This website is not affiliated with, endorsed by or sponsored by Khadim India Limited, the "Khadim's" footwear brand, or any other business, organisation or person that uses the name Khadim, and it makes no claim to their trademarks. All other names and logos mentioned belong to their respective owners and are used only to identify them. <a href="{{ page.root }}trademark.html">Full disclosure</a>.</p>
+<p>Information on this site is general guidance, not legal, immigration, tax or financial advice. Pay figures are indicative estimates. Some pages show advertising served by Google AdSense. © <span class="year">2026</span> Khadim.com. Original text, tools and design © Khadim.com. All rights reserved.</p>
+</div></div></footer>
+<div class="mcta"><a class="btn btn-ghost" href="{{ page.root }}tools.html">See costs</a><a class="btn btn-primary" href="{{ page.root }}get-help.html">Get matched</a></div>
+<div class="cookie" id="cookie" role="dialog" aria-label="Cookie notice"><p>We use essential storage, and with your consent, cookies from Google to show and measure ads. Read the <a href="{{ page.root }}cookies.html">Cookie Policy</a>.</p>
+<div class="acts"><button class="btn btn-primary btn-sm" type="button" data-cookie="all">Accept all</button><button class="btn btn-ghost btn-sm" type="button" data-cookie="essential">Essential only</button></div></div>
+<script src="{{ page.root }}assets/js/rates.js" defer></script>
+<script src="{{ page.root }}assets/js/main.js" defer></script>
+</body>
+</html>
