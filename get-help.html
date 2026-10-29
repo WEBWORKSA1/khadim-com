@@ -1,0 +1,128 @@
+---
+layout: "default"
+title: "Get Matched with Household Help — Free Request | Khadim"
+description: "Tell us the help you need — maid, cook, nanny, elder carer or driver — and get options from licensed agencies and registered workers within 24 hours. Free, no obligation."
+section: "help"
+robots: "index,follow,max-image-preview:large"
+og_type: "website"
+canonical: "https://khadim.com/get-help.html"
+root: ""
+---
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Organization", "name": "Khadim", "url": "https://khadim.com/", "logo": "https://khadim.com/assets/img/icon.svg", "description": "Guides, pay tools and a matching service for hiring household help fairly."}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Do I pay Khadim anything?", "acceptedAnswer": {"@type": "Answer", "text": "No. Agencies you choose to use may charge you a placement fee, which they must tell you in advance."}}, {"@type": "Question", "name": "What if I'm abroad and hiring for my parents?", "acceptedAnswer": {"@type": "Answer", "text": "Many requests come from families arranging elder care from overseas. Put your parents' city in the form and tell us who should be contacted locally."}}, {"@type": "Question", "name": "Can I ask for a particular nationality or religion?", "acceptedAnswer": {"@type": "Answer", "text": "We don't filter by nationality, religion or caste. We match on skills, experience, languages, hours and the care your home needs."}}]}</script>
+<section class="page-hero">
+<div class="wrap">
+<p class="crumbs"><a href="index.html">Home</a> / Find help</p>
+<h1>Tell us what you need. We'll come back with options in 24 hours.</h1>
+<p class="lead">One short form for a housekeeper, cook, nanny, elder carer or driver. A person reads every request, checks it against local pay and rules, and replies with licensed agencies, registered workers or a plan to hire directly.</p>
+</div>
+</section>
+
+<section style="padding-top:8px">
+<div class="wrap split">
+<div class="form-card">
+<form id="leadForm" class="js-form multistep" data-subject="Household help request" data-attach-plan data-redirect="thank-you.html" novalidate>
+<div class="progress" aria-hidden="true"><span class="on"></span><span></span><span></span><span></span></div>
+<p class="step-label" data-step-label>Step 1 of 4</p>
+<input type="hidden" name="request_type" value="Household request">
+<input type="hidden" name="estimate_shown" value="">
+
+<div class="step active" data-require-one="help">
+<h2 style="font-size:1.45rem">What help do you need?</h2>
+<p class="small">Choose all that apply. Combined roles are common.</p>
+<div class="tiles">
+<label class="tile"><input type="checkbox" name="help" value="Housekeeping" data-duty="clean"><span>Housekeeping<small>Cleaning, laundry</small></span></label>
+<label class="tile"><input type="checkbox" name="help" value="Cooking" data-duty="cook"><span>Cooking<small>Daily meals</small></span></label>
+<label class="tile"><input type="checkbox" name="help" value="Childcare" data-duty="child"><span>Childcare<small>Nanny, babysitter</small></span></label>
+<label class="tile"><input type="checkbox" name="help" value="Newborn & mother care" data-duty="child"><span>Newborn care<small>Japa, postnatal</small></span></label>
+<label class="tile"><input type="checkbox" name="help" value="Elder care" data-duty="elder"><span>Elder care<small>Companion, attendant</small></span></label>
+<label class="tile"><input type="checkbox" name="help" value="Patient care" data-duty="elder"><span>Patient care<small>Post-hospital, bedside</small></span></label>
+<label class="tile"><input type="checkbox" name="help" value="Driving" data-duty="drive"><span>Driving<small>Family driver</small></span></label>
+<label class="tile"><input type="checkbox" name="help" value="Gardening" data-duty="garden"><span>Gardening<small>Lawn, terrace</small></span></label>
+<label class="tile"><input type="checkbox" name="help" value="Pet care" data-duty="pet"><span>Pet care<small>Walks, feeding</small></span></label>
+</div>
+<div class="form-msg" data-group-msg role="status"></div>
+<div class="step-actions"><span></span><button class="btn btn-primary" type="button" data-next>Continue</button></div>
+</div>
+
+<div class="step">
+<h2 style="font-size:1.45rem">Where, and how often?</h2>
+<div class="row">
+<div class="field"><label for="lf-country">Country</label>
+<select id="lf-country" name="country" required>
+<option value="" data-code="">Choose…</option>
+<option data-code="IN">India</option><option data-code="AE">UAE</option><option data-code="SA">Saudi Arabia</option><option data-code="QA">Qatar</option><option data-code="SG">Singapore</option><option data-code="HK">Hong Kong</option><option data-code="UK">United Kingdom</option><option data-code="US">United States</option><option data-code="CA">Canada</option><option data-code="">Other</option>
+</select></div>
+<div class="field"><label for="lf-city">City</label><input id="lf-city" name="city" required autocomplete="address-level2" placeholder="e.g. Pune, Dubai, Riyadh"></div>
+</div>
+<div class="field"><label for="lf-area">Area or postcode <span class="muted">(optional)</span></label><input id="lf-area" name="area" placeholder="Neighbourhood, sector or PIN"></div>
+<fieldset class="q"><legend>Arrangement</legend>
+<div class="tiles">
+<label class="tile"><input type="radio" name="arrangement" value="Part-time" data-arr="pt" required><span>Part-time<small>A few hours a day</small></span></label>
+<label class="tile"><input type="radio" name="arrangement" value="Full-time, lives out" data-arr="ft"><span>Full-time<small>Lives out</small></span></label>
+<label class="tile"><input type="radio" name="arrangement" value="Live-in" data-arr="li"><span>Live-in<small>Stays with you</small></span></label>
+<label class="tile"><input type="radio" name="arrangement" value="Short-term cover" data-arr="pt"><span>Short cover<small>Leave, recovery</small></span></label>
+</div></fieldset>
+<div class="row">
+<div class="field"><label for="lf-hours">Hours a day</label><input id="lf-hours" name="hours_per_day" type="number" min="1" max="24" value="4" required></div>
+<div class="field"><label for="lf-days">Days a week</label><select id="lf-days" name="days_per_week"><option>7</option><option selected>6</option><option>5</option><option>4</option><option>3</option><option>2</option><option>1</option></select></div>
+</div>
+<div class="step-actions"><button class="btn btn-ghost" type="button" data-prev>Back</button><button class="btn btn-primary" type="button" data-next>Continue</button></div>
+</div>
+
+<div class="step">
+<h2 style="font-size:1.45rem">Timing and budget</h2>
+<fieldset class="q"><legend>How soon do you need help?</legend>
+<div class="tiles">
+<label class="tile"><input type="radio" name="urgency" value="Right away" required><span>Right away</span></label>
+<label class="tile"><input type="radio" name="urgency" value="Within 2 weeks"><span>Within 2 weeks</span></label>
+<label class="tile"><input type="radio" name="urgency" value="Within a month"><span>Within a month</span></label>
+<label class="tile"><input type="radio" name="urgency" value="Just planning"><span>Just planning</span></label>
+</div></fieldset>
+<div class="field"><label for="lf-home">About your home <span class="muted">(optional)</span></label><textarea id="lf-home" name="household" placeholder="Number of people, children's ages, care needs, cuisine, languages, pets — anything that helps us find the right person."></textarea></div>
+<div class="row">
+<div class="field"><label for="lf-budget">Monthly budget <span class="muted">(optional)</span></label><input id="lf-budget" name="budget" type="number" min="0" placeholder="In local currency"></div>
+<div class="field"><label for="lf-lang">Languages <span class="muted">(optional)</span></label><input id="lf-lang" name="languages" placeholder="e.g. Hindi, English, Tamil"></div>
+</div>
+<div class="estimate-pill" data-lead-estimate hidden><span>Typical pay</span><b>—</b></div>
+<p class="form-msg err" data-budget-warn hidden></p>
+<div class="step-actions"><button class="btn btn-ghost" type="button" data-prev>Back</button><button class="btn btn-primary" type="button" data-next>Continue</button></div>
+</div>
+
+<div class="step">
+<h2 style="font-size:1.45rem">Where should we send your options?</h2>
+<div class="row">
+<div class="field"><label for="lf-name">Your name</label><input id="lf-name" name="name" required autocomplete="name"></div>
+<div class="field"><label for="lf-email">Email</label><input id="lf-email" name="email" type="email" required autocomplete="email"></div>
+</div>
+<div class="row">
+<div class="field"><label for="lf-phone">Phone or WhatsApp <span class="muted">(optional)</span></label><input id="lf-phone" name="phone" type="tel" autocomplete="tel" placeholder="With country code"></div>
+<div class="field"><label for="lf-contact">Reply by</label><select id="lf-contact" name="reply_by"><option>Email</option><option>WhatsApp message</option><option>Phone call</option></select></div>
+</div>
+<input class="hp" name="_honey" tabindex="-1" autocomplete="off" aria-hidden="true">
+<div class="field"><label class="check"><input type="checkbox" name="consent_share" value="yes" required> <span>Share my request with up to 3 licensed agencies or registered workers in my area. I accept the <a href="privacy.html">Privacy Policy</a>.</span></label></div>
+<div class="field"><label class="check"><input type="checkbox" name="fair_home_pledge" value="yes"> <span>I'll offer a written contract, fair pay on time and a weekly day off (the <a href="pledge.html">Fair Home pledge</a>).</span></label></div>
+<div class="step-actions"><button class="btn btn-ghost" type="button" data-prev>Back</button><button class="btn btn-primary" type="submit">Send my request</button></div>
+<div class="form-msg" role="status"></div>
+<p class="small" style="margin-top:10px">No spam calls. We only contact you about this request, and never sell your details.</p>
+</div>
+</form>
+</div>
+
+<div>
+<h2 style="font-size:1.6rem">What happens next</h2>
+<ol class="steps vertical">
+<li><h3>We read your request</h3><p>Usually within a few hours. If something is unclear, we ask before passing it on.</p></li>
+<li><h3>We check pay and the rules</h3><p>If your budget is below local rates or the arrangement needs a visa route, we tell you plainly.</p></li>
+<li><h3>You get options</h3><p>Up to three licensed agencies or registered workers, or a step-by-step plan to hire directly.</p></li>
+<li><h3>You decide</h3><p>No obligation. You interview, agree terms and pay the worker yourself.</p></li>
+</ol>
+<div class="notice">Khadim does not charge workers any fee, and we only pass requests to agencies that agree not to charge workers recruitment fees either.</div>
+<div class="card" style="margin-top:16px"><h3>Before you send it</h3><ul style="margin:0;padding-left:1.1em"><li><a href="tools.html">Check typical pay</a> so your budget attracts good people.</li><li><a href="guides/interview-questions.html">Prepare interview questions</a>.</li><li><a href="contract.html">Draft a contract</a> in five minutes.</li></ul></div>
+<details class="faq"><summary>Do I pay Khadim anything?</summary><p>No. Agencies you choose to use may charge you a placement fee, which they must tell you in advance.</p></details>
+<details class="faq"><summary>What if I'm abroad and hiring for my parents?</summary><p>Many requests come from families arranging elder care from overseas. Put your parents' city in the form and tell us who should be contacted locally.</p></details>
+<details class="faq"><summary>Can I ask for a particular nationality or religion?</summary><p>We don't filter by nationality, religion or caste. We match on skills, experience, languages, hours and the care your home needs.</p></details>
+</div>
+</div>
+</section>
+
