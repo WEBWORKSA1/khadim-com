@@ -1,0 +1,69 @@
+---
+layout: "default"
+title: "Free Domestic Worker Contract Template & Builder | Khadim"
+description: "Build a clear employment agreement for a maid, cook, nanny, carer or driver in five minutes. Pay, hours, rest days, leave, notice and dignity clauses — print and sign."
+section: "tools"
+robots: "index,follow,max-image-preview:large"
+og_type: "website"
+canonical: "https://khadim.com/contract.html"
+root: ""
+---
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Organization", "name": "Khadim", "url": "https://khadim.com/", "logo": "https://khadim.com/assets/img/icon.svg", "description": "Guides, pay tools and a matching service for hiring household help fairly."}</script>
+<section class="page-hero no-print">
+<div class="wrap">
+<p class="crumbs"><a href="index.html">Home</a> / <a href="tools.html">Costs &amp; tools</a> / Contract builder</p>
+<h1>Domestic employment agreement builder</h1>
+<p class="lead">Fill in the details and your agreement writes itself below. Print it, read it together, and both sign. Where a government contract is required — such as Hong Kong's Standard Employment Contract or Saudi Arabia's Musaned contract — use this as a side letter for house rules.</p>
+</div>
+</section>
+<section style="padding-top:0">
+<div class="wrap split">
+<form id="contractForm" class="form-card no-print" onsubmit="return false">
+<h2 style="font-size:1.4rem">The details</h2>
+<div class="row">
+<div class="field"><label for="c_employer">Employer name</label><input id="c_employer" name="c_employer" placeholder="Your full name"></div>
+<div class="field"><label for="c_worker">Worker name</label><input id="c_worker" name="c_worker" placeholder="Their full name"></div>
+</div>
+<div class="field"><label for="c_address">Home address</label><input id="c_address" name="c_address" placeholder="Where the work takes place"></div>
+<div class="row">
+<div class="field"><label for="c_role">Role</label><select id="c_role" name="c_role"><option>housekeeper</option><option>cook</option><option>housekeeper-cook</option><option>nanny</option><option>elder caregiver</option><option>driver</option><option>gardener</option><option>domestic helper</option></select></div>
+<div class="field"><label for="c_arr">Arrangement</label><select id="c_arr" name="c_arr"><option>part-time</option><option>full-time, live-out</option><option>live-in</option></select></div>
+</div>
+<fieldset class="q"><legend>Main duties</legend>
+<div class="chips">
+<label class="chip"><input type="checkbox" name="c_duty" value="cleaning" checked><span>Cleaning</span></label>
+<label class="chip"><input type="checkbox" name="c_duty" value="laundry and ironing"><span>Laundry</span></label>
+<label class="chip"><input type="checkbox" name="c_duty" value="cooking"><span>Cooking</span></label>
+<label class="chip"><input type="checkbox" name="c_duty" value="childcare"><span>Childcare</span></label>
+<label class="chip"><input type="checkbox" name="c_duty" value="care of an older person"><span>Elder care</span></label>
+<label class="chip"><input type="checkbox" name="c_duty" value="driving"><span>Driving</span></label>
+<label class="chip"><input type="checkbox" name="c_duty" value="grocery shopping"><span>Shopping</span></label>
+<label class="chip"><input type="checkbox" name="c_duty" value="pet care"><span>Pets</span></label>
+</div></fieldset>
+<div class="row3">
+<div class="field"><label for="c_cur">Currency</label><select id="c_cur" name="c_cur"><option>INR</option><option>AED</option><option>SAR</option><option>QAR</option><option>SGD</option><option>HKD</option><option>GBP</option><option>USD</option><option>CAD</option></select></div>
+<div class="field"><label for="c_salary">Monthly pay</label><input id="c_salary" name="c_salary" type="number" min="0" placeholder="18000"></div>
+<div class="field"><label for="c_payday">Paid by day</label><input id="c_payday" name="c_payday" type="number" min="1" max="28" value="7"></div>
+</div>
+<div class="field"><label for="c_paymethod">Payment method</label><select id="c_paymethod" name="c_paymethod"><option>bank transfer</option><option>UPI transfer</option><option>the Wage Protection System</option><option>the Musaned e-wallet</option><option>cash with a signed receipt</option></select></div>
+<div class="row3">
+<div class="field"><label for="c_hours">Hours a day</label><input id="c_hours" name="c_hours" type="number" min="1" max="12" value="8"></div>
+<div class="field"><label for="c_rest">Rest days a week</label><input id="c_rest" name="c_rest" type="number" min="1" max="3" value="1"></div>
+<div class="field"><label for="c_leave">Paid leave days</label><input id="c_leave" name="c_leave" type="number" min="0" value="30"></div>
+</div>
+<div class="row3">
+<div class="field"><label for="c_start">Start date</label><input id="c_start" name="c_start" type="date"></div>
+<div class="field"><label for="c_trial">Trial period</label><select id="c_trial" name="c_trial"><option>1 month</option><option>2 weeks</option><option>3 months</option><option>6 months</option></select></div>
+<div class="field"><label for="c_notice">Notice</label><select id="c_notice" name="c_notice"><option>30 days</option><option>15 days</option><option>7 days</option><option>2 months</option></select></div>
+</div>
+<div class="field"><label for="c_travel">Travel arrangement (live-out)</label><input id="c_travel" name="c_travel" placeholder="e.g. Employer pays monthly bus pass"></div>
+<div class="field"><label for="c_other">Other terms</label><textarea id="c_other" name="c_other" placeholder="Festival bonus, phone allowance, uniform, annual raise…"></textarea></div>
+<div style="display:flex;gap:10px;flex-wrap:wrap"><button class="btn btn-primary" type="button" id="contractPrint">Print or save as PDF</button><a class="btn btn-ghost" href="guides/employment-contract-guide.html">What each clause means</a></div>
+</form>
+<div>
+<div class="contract" id="contractOut" aria-live="polite"></div>
+<p class="small no-print" style="margin-top:12px">This is a plain-language template, not legal advice. Local law overrides anything here that gives the worker less.</p>
+</div>
+</div>
+</section>
+

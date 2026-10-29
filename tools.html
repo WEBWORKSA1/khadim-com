@@ -1,0 +1,195 @@
+---
+layout: "default"
+title: "Domestic Worker Salary & Cost Calculators 2026 | Khadim"
+description: "Free calculators for household employers — fair pay by country and role, the full monthly cost of a live-in helper, end-of-service gratuity, hourly to monthly pay, and leave planning."
+section: "tools"
+robots: "index,follow,max-image-preview:large"
+og_type: "website"
+canonical: "https://khadim.com/tools.html"
+root: ""
+---
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Organization", "name": "Khadim", "url": "https://khadim.com/", "logo": "https://khadim.com/assets/img/icon.svg", "description": "Guides, pay tools and a matching service for hiring household help fairly."}</script>
+<section class="page-hero">
+<div class="wrap">
+<p class="crumbs"><a href="index.html">Home</a> / Costs &amp; tools</p>
+<h1>Pay and cost calculators for household employers</h1>
+<p class="lead">Set a fair salary, see the true monthly cost, and work out gratuity and leave — for India, the Gulf, Singapore, Hong Kong, the UK, US and Canada.</p>
+</div>
+</section>
+<section style="padding-top:0">
+<div class="wrap">
+<div class="tabs tool-tabs" role="tablist" aria-label="Calculators">
+<button type="button" role="tab" data-tool="t-plan" aria-selected="true">Fair pay planner</button>
+<button type="button" role="tab" data-tool="t-cost" aria-selected="false">Total monthly cost</button>
+<button type="button" role="tab" data-tool="t-gratuity" aria-selected="false">End-of-service gratuity</button>
+<button type="button" role="tab" data-tool="t-convert" aria-selected="false">Hourly ↔ monthly</button>
+<button type="button" role="tab" data-tool="t-leave" aria-selected="false">Leave &amp; rest days</button>
+</div>
+
+<div class="tool on" id="t-plan">
+<div class="split">
+<div class="form-card" data-planner data-restore>
+<h2 style="font-size:1.5rem">Fair pay planner</h2>
+<fieldset class="q"><legend>Duties</legend>
+<div class="chips">
+<label class="chip"><input type="checkbox" name="duty" value="clean" checked><span>Cleaning</span></label>
+<label class="chip"><input type="checkbox" name="duty" value="cook"><span>Cooking</span></label>
+<label class="chip"><input type="checkbox" name="duty" value="child"><span>Childcare</span></label>
+<label class="chip"><input type="checkbox" name="duty" value="elder"><span>Elder care</span></label>
+<label class="chip"><input type="checkbox" name="duty" value="drive"><span>Driving</span></label>
+<label class="chip"><input type="checkbox" name="duty" value="garden"><span>Garden</span></label>
+<label class="chip"><input type="checkbox" name="duty" value="pet"><span>Pets</span></label>
+</div></fieldset>
+<fieldset class="q"><legend>Arrangement</legend>
+<div class="seg">
+<label><input type="radio" name="arr" value="pt" checked><span>Part-time</span></label>
+<label><input type="radio" name="arr" value="ft"><span>Full-time, lives out</span></label>
+<label><input type="radio" name="arr" value="li"><span>Live-in</span></label>
+</div></fieldset>
+<div class="two">
+<div class="field"><label for="tp-country">Country</label>
+<select id="tp-country" name="country"><option value="IN">India</option><option value="AE">UAE</option><option value="SA">Saudi Arabia</option><option value="QA">Qatar</option><option value="SG">Singapore</option><option value="HK">Hong Kong</option><option value="UK">United Kingdom</option><option value="US">United States</option><option value="CA">Canada</option></select></div>
+<div class="field" data-tier-wrap><label for="tp-tier">City size</label><select id="tp-tier" name="tier"><option value="metro">Metro city</option><option value="tier2">Tier-2 city</option><option value="tier3">Smaller town</option></select></div>
+</div>
+<div data-hours-wrap>
+<div class="field"><label for="tp-hours">Hours a day</label><div class="range-row"><input id="tp-hours" type="range" name="hours" min="1" max="12" value="4"><span class="range-val" data-hours-val>4 h/day</span></div></div>
+<div class="field"><label for="tp-days">Days a week</label><select id="tp-days" name="days"><option>7</option><option selected>6</option><option>5</option><option>4</option><option>3</option><option>2</option><option>1</option></select></div>
+</div>
+</div>
+<div>
+<div class="card" aria-live="polite">
+<p class="result-role" data-out="role">—</p>
+<p class="result-big" data-out="range">—</p>
+<div class="result-split">
+<div>Salary<b data-out="salary">—</b></div>
+<div><span data-out="exlabel">Employer costs</span><b data-out="extra">—</b></div>
+<div>Total a month<b data-out="total">—</b></div>
+</div>
+<p class="small" data-out="note"></p>
+<h3 style="margin-top:18px">Rules to know in this country</h3>
+<ul data-out="notes"></ul>
+<a class="btn btn-primary" href="get-help.html" data-plan-cta>Get matched with this plan</a>
+</div>
+<div class="notice">Ranges are indicative cash pay for 2026, based on public agency rates, job listings and government minimums. They are not quotes or legal advice. Experience, skills, languages and your neighbourhood can move pay up or down. <a href="guides/domestic-worker-salary-guide.html">How we estimate pay</a>.</div>
+</div>
+</div>
+</div>
+
+<div class="tool" id="t-cost">
+<div class="split">
+<div class="form-card">
+<h2 style="font-size:1.5rem">The full cost of employing a helper</h2>
+<p class="small">Salary is only part of it. Add everything you'll pay over the contract.</p>
+<div class="row">
+<div class="field"><label for="tc-cur">Currency</label><select id="tc-cur"><option>INR</option><option>AED</option><option>SAR</option><option>QAR</option><option>SGD</option><option>HKD</option><option>GBP</option><option>USD</option><option>CAD</option></select></div>
+<div class="field"><label for="tc-months">Contract length (months)</label><input id="tc-months" type="number" min="1" value="24"></div>
+</div>
+<h3 style="font-size:1.1rem">Every month</h3>
+<div class="row">
+<div class="field"><label for="tc-salary">Salary</label><input id="tc-salary" type="number" min="0" value="18000"></div>
+<div class="field"><label for="tc-food">Food or food allowance</label><input id="tc-food" type="number" min="0" value="3000"></div>
+</div>
+<div class="row">
+<div class="field"><label for="tc-housing">Room, utilities, phone</label><input id="tc-housing" type="number" min="0" value="1500"></div>
+<div class="field"><label for="tc-insurance">Insurance and levy</label><input id="tc-insurance" type="number" min="0" value="500"></div>
+</div>
+<h3 style="font-size:1.1rem">Once, or each year</h3>
+<div class="row">
+<div class="field"><label for="tc-visa">Recruitment, visa, medical (one-off)</label><input id="tc-visa" type="number" min="0" value="2000"></div>
+<div class="field"><label for="tc-ticket">Ticket home (per year)</label><input id="tc-ticket" type="number" min="0" value="0"></div>
+</div>
+<div class="row">
+<div class="field"><label for="tc-bonus">Bonus (per year)</label><input id="tc-bonus" type="number" min="0" value="18000"></div>
+<div class="field"><label for="tc-other">Other one-off (uniform, training)</label><input id="tc-other" type="number" min="0" value="1000"></div>
+</div>
+</div>
+<div>
+<div class="card">
+<p class="small">Total over the contract</p>
+<p class="result-big" id="tc-total">—</p>
+<div class="out-grid">
+<div><span>Average per month</span><b id="tc-month">—</b></div>
+<div><span>Recurring each month</span><b id="tc-recurring">—</b></div>
+<div><span>One-off and yearly</span><b id="tc-oneoff">—</b></div>
+<div><span>Salary as share of total</span><b id="tc-share">—</b></div>
+</div>
+</div>
+<div class="notice">In the UAE the employer pays all recruitment and government fees, and the worker gets a ticket home every two years. In Singapore, add the monthly levy and security bond. In India, a festival bonus of about one month's pay is customary.</div>
+</div>
+</div>
+</div>
+
+<div class="tool" id="t-gratuity">
+<div class="split">
+<div class="form-card">
+<h2 style="font-size:1.5rem">End-of-service gratuity</h2>
+<div class="field"><label for="gr-preset">Country rule</label>
+<select id="gr-preset"><option value="AE" data-days="14">UAE — commonly 14 days per year</option><option value="QA" data-days="21">Qatar — at least 3 weeks per year</option><option value="custom" data-days="">Custom formula</option></select></div>
+<div class="field"><label for="gr-wage">Last basic monthly wage</label><input id="gr-wage" type="number" min="0" value="2000"></div>
+<div class="row">
+<div class="field"><label for="gr-years">Years of service</label><input id="gr-years" type="number" min="0" value="3"></div>
+<div class="field"><label for="gr-months">Extra months</label><input id="gr-months" type="number" min="0" max="11" value="0"></div>
+</div>
+<div class="row">
+<div class="field"><label for="gr-days">Days of wage per year</label><input id="gr-days" type="number" min="0" step="0.5" value="14"></div>
+<div class="field"><label for="gr-cap">Cap in months of wage <span class="muted">(0 = none)</span></label><input id="gr-cap" type="number" min="0" value="0"></div>
+</div>
+</div>
+<div>
+<div class="card">
+<p class="small">Estimated gratuity</p>
+<p class="result-big" id="gr-total">—</p>
+<div class="out-grid"><div><span>Daily basic wage</span><b id="gr-daily">—</b></div><div><span>Service counted</span><b id="gr-service">—</b></div></div>
+<p class="small" id="gr-note" style="margin-top:12px"></p>
+</div>
+<div class="notice">UAE: the 2022 domestic worker law leaves end-of-service benefits to Cabinet rules. Many employers and agencies still apply 14 days' basic wage per year after one year of service; check current MOHRE guidance before you settle. Qatar: Law No. 15 of 2017 sets at least three weeks' wage per year after 12 months. Saudi Arabia: the domestic worker rules give one month's wage after four consecutive years.</div>
+</div>
+</div>
+</div>
+
+<div class="tool" id="t-convert">
+<div class="split">
+<div class="form-card">
+<h2 style="font-size:1.5rem">Hourly ↔ monthly pay</h2>
+<div class="field"><label for="cv-mode">Convert</label><select id="cv-mode"><option value="h2m">Hourly rate to monthly pay</option><option value="m2h">Monthly pay to hourly rate</option></select></div>
+<div class="field"><label for="cv-rate">Rate or monthly pay</label><input id="cv-rate" type="number" min="0" value="150"></div>
+<div class="row">
+<div class="field"><label for="cv-hours">Hours a day</label><input id="cv-hours" type="number" min="0" value="3"></div>
+<div class="field"><label for="cv-days">Days a week</label><input id="cv-days" type="number" min="0" max="7" value="6"></div>
+</div>
+</div>
+<div><div class="card"><p class="small">Result</p><p class="result-big" id="cv-out">—</p><p class="muted" id="cv-alt"></p></div>
+<div class="notice">Uses 4.33 weeks a month. Use it to compare a part-time offer with a full-time salary, or check that hours added over time are still paid fairly.</div></div>
+</div>
+</div>
+
+<div class="tool" id="t-leave">
+<div class="split">
+<div class="form-card">
+<h2 style="font-size:1.5rem">Leave and rest days in a year</h2>
+<div class="row">
+<div class="field"><label for="lv-weekly">Rest days a week</label><input id="lv-weekly" type="number" min="0" max="3" step="0.5" value="1"></div>
+<div class="field"><label for="lv-annual">Paid annual leave (days)</label><input id="lv-annual" type="number" min="0" value="30"></div>
+</div>
+<div class="row">
+<div class="field"><label for="lv-holidays">Public holidays given</label><input id="lv-holidays" type="number" min="0" value="10"></div>
+<div class="field"><label for="lv-sick">Paid sick days allowed</label><input id="lv-sick" type="number" min="0" value="15"></div>
+</div>
+</div>
+<div><div class="card"><div class="out-grid">
+<div><span>Days off in the year</span><b id="lv-off">—</b></div>
+<div><span>Working days</span><b id="lv-work">—</b></div>
+<div><span>Share of the year off</span><b id="lv-pct">—</b></div>
+<div><span>Sick leave available</span><b id="lv-sickout">—</b></div>
+</div></div>
+<div class="notice">ILO Convention 189 calls for weekly rest of at least 24 consecutive hours. The UAE requires 30 days' paid annual leave; Qatar three weeks; Hong Kong and Singapore set statutory holidays and rest days. Plan cover for leave before you need it.</div></div>
+</div>
+</div>
+
+<div class="band" style="margin-top:48px">
+<div><h2>Put the numbers in writing</h2><p>Turn your pay, hours and leave into a clear agreement both of you sign.</p></div>
+<div><a class="btn btn-primary btn-block" href="contract.html">Open the contract builder</a></div>
+</div>
+</div>
+</section>
+
