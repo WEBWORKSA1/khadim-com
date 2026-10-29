@@ -18,7 +18,7 @@ Every form posts by AJAX to a form relay that forwards to the site's single priv
 
 ## Publish on GitHub Pages (free plan)
 
-Settings → Pages → Build and deployment → **Deploy from a branch** → `main` / `(root)`. Every push to `main` rebuilds the site in about a minute.
+The site is served from the `gh-pages` branch, which holds the same files as `main`. To publish straight from `main` instead (simplest for future edits): Settings → Pages → Build and deployment → **Deploy from a branch** → `main` / `(root)` → Save. After that, every push to `main` rebuilds the site in about a minute and `gh-pages` can be deleted.
 
 ## Move to khadim.com
 
